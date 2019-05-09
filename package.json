@@ -2,7 +2,7 @@
   "name": "use-action-cable",
   "version": "1.0.0",
   "description": "A React hook for using ActionCable within components.",
-  "main": "libraries/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "webpack",
     "dev": "webpack --watch",
