@@ -1,4 +1,4 @@
-# context-media-match
+# use-action-cable
 🚠 A React hook for creating ActionCable subscriptions in components
 
 ## Install
@@ -44,7 +44,7 @@ const SomeOtherComponent = ({ id }) => {
 export default SomeOtherComponent;
 ```
 
-###### The hook will not create the subscription until `params` is present.
+##### The hook will not create the subscription until `params` is present.
 - This helps with components that need to fetch data first. For example:
 
 ```jsx
@@ -80,7 +80,7 @@ const SomeOtherComponent = () => {
 export default SomeOtherComponent;
 ```
 
-###### API
+##### API
 `<ActionCableProvider url="path to cable">{children}</ActionCableProvider>`
 
 `useActionCable(params, handlers)`
