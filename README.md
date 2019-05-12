@@ -1,5 +1,5 @@
-# use-action-cable
-🚠 A React hook for creating ActionCable subscriptions in components
+# 🚠 use-action-cable
+A React hook for creating ActionCable subscriptions in components
 
 ## Install
 
