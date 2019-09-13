@@ -1,7 +1,7 @@
 // libraries
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import ActionCable from '@rails/actioncable';
+import { createConsumer } from '@rails/actioncable';
 
 // ActionCableHooks
 import { ActionCableContext } from './context.jsx';
@@ -20,7 +20,7 @@ export const ActionCableProvider = ({ url, children }) => {
   const [conn, setConn] = useState(null);
 
   useEffect(() => {
-    if (!conn) setConn(ActionCable.createConsumer(url));
+    if (!conn) setConn(createConsumer(url));
 
     return () => conn && conn.disconnect();
   });
