@@ -22,7 +22,7 @@
     "react": "^16.8.0"
   },
   "dependencies": {
-    "actioncable": "^5.2.3"
+    "@rails/actioncable": "^6.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.0",

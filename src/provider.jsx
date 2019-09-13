@@ -1,7 +1,7 @@
 // libraries
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import ActionCable from 'actioncable';
+import ActionCable from '@rails/actioncable';
 
 // ActionCableHooks
 import { ActionCableContext } from './context.jsx';
