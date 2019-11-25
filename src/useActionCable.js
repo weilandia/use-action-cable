@@ -7,12 +7,12 @@ import { ActionCableContext } from './context.jsx';
 export const useActionCable = (params, handlers = {}) => {
   const { conn } = useContext(ActionCableContext);
 
-  const diff = JSON.stringify(params);
+  const diff = JSON.stringify({ params, url: conn && conn._url });
 
   useEffect(() => {
     let subscription;
 
-    if (params) {
+    if (params && conn) {
       subscription = conn.subscriptions.create(params, handlers);
     }
 

@@ -1,6 +1,6 @@
 {
   "name": "use-action-cable",
-  "version": "6.0.3",
+  "version": "6.0.4",
   "description": "A React hook for using ActionCable within components.",
   "main": "lib/index.js",
   "scripts": {
