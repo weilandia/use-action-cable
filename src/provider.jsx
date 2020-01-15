@@ -23,7 +23,7 @@ export const ActionCableProvider = ({ url, children }) => {
     if (!conn) setConn(createConsumer(url));
 
     return () => conn && conn.disconnect();
-  });
+  }, []);
 
   return <ActionCableContext.Provider value={{ conn }}>{children}</ActionCableContext.Provider>;
 };
