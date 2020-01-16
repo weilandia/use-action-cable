@@ -16,6 +16,6 @@ export const useActionCable = (params, handlers = {}) => {
       subscription = conn.subscriptions.create(params, handlers);
     }
 
-    return () => subscription && conn.subscriptions.remove(subscription);
+    return () => subscription && subscription.unsubscribe();
   }, [diff]);
 };
